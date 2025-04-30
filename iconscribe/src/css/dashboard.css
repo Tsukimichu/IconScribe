@@ -1,0 +1,158 @@
+html {
+    scroll-behavior: smooth;
+    font-family: inherit;
+}
+
+.header {
+    background-color: #29417C;
+    padding: 15px 30px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.Service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100dvh; 
+    background-color: #f6f6f6;
+    padding: 7.7rem 1rem;
+}
+
+.Service h1 {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.offered-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+
+.offered-container::-webkit-scrollbar {
+    display: none; 
+}
+
+.offered-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    scroll-snap-align: center;
+}
+
+.offered-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.offered-card h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #29417C;
+    margin-bottom: 1rem;
+}
+
+.offered-card img {
+    width: 10rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.offered-card p {
+    font-size: 0.9rem;
+    color: #4b5563;
+    padding: 0 10px;
+}
+
+.section {
+    min-height: calc(100vh - 7.7rem);
+    scroll-margin-top: 7.7rem;
+}
+
+@media (max-width: 768px) {
+    .offered-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        scroll-snap-type: x mandatory;
+    }
+
+    .offered-card {
+        flex: 0 0 80%;
+        min-width: 250px;
+        margin-right: 1rem;
+    }
+
+    .Service {
+        padding: 7.7rem 1rem;
+    }
+
+    .header {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .Service h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .offered-container {
+        flex-direction: row; 
+        overflow-x: auto;   
+        padding: 0 1rem;
+        gap: 1rem;   
+        scroll-snap-type: x mandatory;
+    }
+
+    .offered-card {
+        width: 90%;
+        max-width: 280px;  
+        margin: 1rem 0; 
+        scroll-snap-align: center;
+    }
+
+    .offered-card img {
+        width: 8rem; 
+    }
+
+    .offered-card h2 {
+        font-size: 1rem;
+    }
+
+    .offered-card p {
+        font-size: 0.85rem;
+    }
+
+    .Service {
+        padding: 4rem 1rem;
+    }
+
+    .header {
+        padding: 10px 20px;
+    }
+}

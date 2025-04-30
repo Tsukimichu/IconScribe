@@ -1,0 +1,119 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: auto;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.loGo img {
+    height: 50px;
+    object-fit: contain;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-container a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-container a:hover {
+    background-color: #F8E60E;
+    color: #000;
+}
+
+.nav-container  .active{
+    background-color: #F8E60E;
+    color: #000;
+}
+
+.auth-button button {
+    background-color: #F8E60E;
+    color: #1f3261;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-button:hover{
+    filter: drop-shadow(0 0 2.5px #F8E60E);
+}
+  
+.auth-button.react:hover{
+    filter: drop-shadow(0 0 2.5px #d1f80e);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .burger {
+        display: block;
+        z-index: 1001;
+    }
+
+    .left-nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #29417C;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 2rem;
+        gap: 1rem;
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        z-index: 998;
+    }
+
+    .left-nav.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-container a {
+        padding: 0.5rem 0;
+    }
+
+    .auth-button {
+        align-self: center;
+        margin-top: 10px;
+    }
+}
+
+

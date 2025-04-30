@@ -1,0 +1,50 @@
+.Sidebar{
+    width: 15.625rem;
+    align-items: center;
+    background-color: #29387C;
+    border-radius: 0 10px 10px 0;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+
+.sidelogo{
+    margin: 4rem 0 3rem 0;
+}
+
+.nav-side{ 
+    align-items: center;
+}
+
+.sideIcon{
+    color: #fff;
+}
+
+.sidebutton{
+    padding: 10px;
+    display: flex;
+    width: 12rem;
+    border-radius: 10px;
+    gap: 1.5rem;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 5px;
+}
+
+.sidebutton:hover{
+    background-color: rgb(119, 128, 144, 20%);
+}
+
+.sidebutton:active{
+    background-color: rgb(119, 128, 144, 20%);
+}
+
+.sidebutton p{
+    font-size: 14px;
+    color: #fff;
+}
+

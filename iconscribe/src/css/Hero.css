@@ -1,0 +1,67 @@
+.Hero {
+    background-image: linear-gradient(220deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../assets/org.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 5rem;
+    color: white;
+    min-height: 90dvh;
+    scroll-margin-top: 7.7rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: relative;
+}
+
+.Hero-text {
+    max-width: 600px;
+}
+
+.Hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.Hero p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .Hero {
+        padding: 3rem;
+        background-position: center;
+    }
+
+    .Hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .Hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .Hero {
+        padding: 2rem;
+        min-height: 70dvh;
+        background-position: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .Hero-text {
+        max-width: 100%;
+    }
+
+    .Hero h1 {
+        font-size: 2rem;
+    }
+
+    .Hero p {
+        font-size: 0.95rem;
+    }
+}
