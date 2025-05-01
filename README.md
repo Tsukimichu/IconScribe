@@ -216,7 +216,8 @@ Here is a `README.md` file documenting the provided APIs:
 - Joshua S. Valenzuela 
 - Niel  Osinsao  
 - John Aldrin Anthony Portento  
-- Aaron Oriasel  
+- Aaron Oriasel
+- Mark John Matining
 
 ---
 
